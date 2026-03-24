@@ -1,4 +1,4 @@
-# Comp Library (React + TypeScript)
+# Comp Library (React + JavaScript)
 
 Librería UI reutilizable y escalable con **showcase visual** y sistema de themes.
 
@@ -15,12 +15,11 @@ src/
     data-display/
     feedback/
     layout/
-    index.ts          # barrel exports
+    index.js          # barrel exports
   data/               # datos demo para poblar UI
   hooks/              # hooks reutilizables
   styles/             # global + themes + tokens
   themes/             # metadata de themes
-  types/              # tipos compartidos
   utils/              # utilidades puras
 ```
 
@@ -35,13 +34,13 @@ src/
 
 ### Añadir un nuevo componente
 1. Crear carpeta en `src/components/<categoria>/`.
-2. Definir props tipadas y módulo CSS.
-3. Exportar en `src/components/index.ts`.
-4. Añadir bloque de ejemplo en `src/app/Showcase.tsx`.
+2. Definir props claras y módulo CSS.
+3. Exportar en `src/components/index.js`.
+4. Añadir bloque de ejemplo en `src/app/Showcase.jsx`.
 
 ### Añadir un nuevo theme
 1. Agregar bloque `[data-theme='nuevo']` en `src/styles/themes.css`.
-2. Añadir clave en `src/themes/themeTokens.ts` y tipo `ThemeName`.
+2. Añadir clave en `src/themes/themeTokens.js`.
 3. Verificar contraste/focus/estados en showcase.
 
 ## Decisiones de diseño
