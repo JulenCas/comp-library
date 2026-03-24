@@ -1,0 +1,11 @@
+.success,.error{padding:.7rem;border-radius:var(--radius-md);border:1px solid var(--border)}.success{background:color-mix(in oklab,var(--success) 20%, transparent)}.error{background:color-mix(in oklab,var(--danger) 20%, transparent)}
+.badge{padding:.2rem .5rem;background:var(--accent-soft);color:var(--accent-strong);border-radius:999px;font-size:.8rem}
+.chips{display:flex;gap:.5rem}.chips span{padding:.3rem .6rem;border:1px solid var(--border);border-radius:999px}
+.tooltip{position:relative}.tooltip span{position:absolute;opacity:0;transition:var(--transition);background:var(--text);color:var(--bg);padding:.3rem .5rem;border-radius:.4rem;top:-2.2rem;left:0}
+.tooltip:hover span,.tooltip:focus-visible span{opacity:1}
+.toast{padding:.7rem;border-radius:var(--radius-md);background:var(--surface);border:1px solid var(--border);box-shadow:var(--shadow-sm)}
+.loader{width:28px;height:28px;border-radius:50%;border:3px solid var(--border);border-top-color:var(--primary);animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.skeleton{height:80px;border-radius:var(--radius-md);background:linear-gradient(90deg,var(--surface-2),var(--surface),var(--surface-2));background-size:200% 100%;animation:shimmer 1.2s infinite}
+@keyframes shimmer{to{background-position:-200% 0}}
+.empty{padding:1rem;border:1px dashed var(--border);border-radius:var(--radius-lg);text-align:center}
